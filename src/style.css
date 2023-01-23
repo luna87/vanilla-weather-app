@@ -18,17 +18,22 @@ li {
   font-weight: 100;
   line-height: 19px;
 }
+
+.weather-app-wrapper {
+  max-width: 600px;
+  
+}
+ 
+
 .weather-app {
   padding: 30px;
   border: 0.5px solid #dadde1;
   border-radius: 7px;
   margin: 30px auto;
+  
 }
 
-.weather-app-wrapper {
-  max-width: 600px;
-  margin: 40px auto;
-}
+
 .weather-temperature strong {
   font-size: 32px;
 
