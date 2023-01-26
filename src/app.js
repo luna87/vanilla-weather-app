@@ -38,9 +38,9 @@ function displayTemperature(response) {
   dateElement.innerHTML = formatDate(response.data.time * 1000);
 }
 
-let Key = "e30f73b3544toc0d6faf9afc4179ef7e";
+let key ="e30f73b3544toc0d6faf9afc4179ef7e";
+let city="Tehran";
+let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${key}&units=metric
+`;
 
-let apiUrl =
-  "https://api.shecodes.io/weather/v1/current?query=lisbon&key=e30f73b3544toc0d6faf9afc4179ef7e&units=metric";
-console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);
