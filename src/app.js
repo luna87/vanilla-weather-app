@@ -23,12 +23,14 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
+  console.log(response);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
   let humdityElement = document.querySelector("#humdity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
 
   windElement.innerHTML = response.data.wind.speed;
   humdityElement.innerHTML = response.data.temperature.humidity;
@@ -36,10 +38,15 @@ function displayTemperature(response) {
   descriptionElement.innerHTML = response.data.condition.description;
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   dateElement.innerHTML = formatDate(response.data.time * 1000);
+  iconElement.setAttribute(
+    "src",
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+  );
+  iconElement.setAttribute("alt", response.data.condition.description);
 }
 
-let key ="e30f73b3544toc0d6faf9afc4179ef7e";
-let city="Tehran";
+let key = "e30f73b3544toc0d6faf9afc4179ef7e";
+let city = "tehran";
 let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${key}&units=metric
 `;
 
