@@ -58,6 +58,12 @@ text-transform: capitalize;
 }
 p{
   
-  
   font-size: x-small;
+}
+.weather-app .active {
+  color: black;
+  cursor: default;
+}
+.weather-app .active:hover{
+text-decoration: none;
 }
