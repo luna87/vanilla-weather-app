@@ -45,9 +45,18 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.condition.description);
 }
 
+function search(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city_input");
+  console.log(cityInputElement);
+}
+
 let key = "e30f73b3544toc0d6faf9afc4179ef7e";
 let city = "tehran";
 let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${key}&units=metric
 `;
 
 axios.get(apiUrl).then(displayTemperature);
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", search);
