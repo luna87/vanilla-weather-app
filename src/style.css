@@ -17,26 +17,21 @@ li {
   padding: 0px;
   font-weight: 100;
   line-height: 19px;
-  
 }
-li:first-letter{
-text-transform: capitalize;
+li:first-letter {
+  text-transform: capitalize;
 }
 
 .weather-app-wrapper {
   max-width: 600px;
-  
 }
- 
 
 .weather-app {
   padding: 30px;
   border: 0.5px solid #dadde1;
   border-radius: 7px;
   margin: 30px auto;
-  
 }
-
 
 .weather-temperature strong {
   font-size: 32px;
@@ -56,14 +51,28 @@ text-transform: capitalize;
 .weather-temperature a {
   text-decoration: none;
 }
-p{
-  
+p {
   font-size: x-small;
 }
 .weather-app .active {
   color: black;
   cursor: default;
 }
-.weather-app .active:hover{
-text-decoration: none;
+.weather-app .active:hover {
+  text-decoration: none;
+}
+.weather-forecast {
+  margin-top: 50px;
+  text-align: center;
+  color: black;
+}
+.weather-forecast-date {
+  font-size: 19px;
+  opacity: 0.5;
+}
+.weather-forecast-temperature {
+  font-size: 13px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }
