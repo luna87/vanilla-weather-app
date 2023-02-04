@@ -23,6 +23,7 @@ li:first-letter {
 }
 
 .weather-app-wrapper {
+  margin: 30px auto;
   max-width: 600px;
 }
 
@@ -30,7 +31,7 @@ li:first-letter {
   padding: 30px;
   border: 0.5px solid #dadde1;
   border-radius: 7px;
-  margin: 30px auto;
+  
 }
 
 .weather-temperature strong {

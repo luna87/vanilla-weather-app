@@ -38,11 +38,13 @@
               </div>
             </div>
           </form>
-          <h1 id="city"></h1>
-          <ul>
-            <li>last updated:<span id="date"></span></li>
-            <li id="description"></li>
-          </ul>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>last updated:<span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+          </div>
           <div class="row">
             <div class="col-6">
               <div class="d-flex weather-temperature">
@@ -64,36 +66,20 @@
               </ul>
             </div>
           </div>
-          <div class="weather-forecast">
-            <div class="row">
-              <div class="col-2">
-                <div class="weather-forecast-date">Thu</div>
-                <img
-                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/snow-night.png"
-                  alt=""
-                  width="36"
-                />
-                <div class="weather-forecast-temperature">
-                  <span class="weather-forecast-temperature-max"> 18° </span>
-                  <span class="weather-forecast-temperature-min"> 12° </span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
+        <small>
+          <a
+            href="https://github.com/luna87/vanilla-weather-app"
+            target="_blank"
+            class="refer"
+          >
+            Open-source code</a
+          >
+          by Mona Nadi
+        </small>
       </div>
     </div>
-    <p>
-      <small>
-        <a
-          href="https://github.com/luna87/vanilla-weather-app"
-          target="_blank"
-          class="refer"
-          >Open-source code</a
-        >
-        by Mona Nadi
-      </small>
-    </p>
     <script src="src\app.js"></script>
   </body>
 </html>
